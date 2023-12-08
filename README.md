@@ -1,4 +1,4 @@
-# Projeto Add de Gestão
+# Projeto App de Gestão
 
 Este é um projeto de estudo desenvolvido utilizando PHP com o framework Laravel.
 
