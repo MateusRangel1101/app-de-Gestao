@@ -1,16 +1,15 @@
 <h3>Fornecedor View</h3>
 
-{{ 'Texto de teste' }}
-</br>
-<?= 'Texto de teste 2' ?>
-</br>
-<!-- Testando comentario -->
-{{-- comentario no formato Blade --}}
-
 @php
-//Comentario no formato PHP_ROUND_HALF_DOWN
-/*
-Comentário em mais de uma linha
-*/
-echo('Texto de teste 3');
+
 @endphp
+
+{{-- @dd($fornecedores) --}}
+
+@if (count($fornecedores) >0 && count($fornecedores) < 10)
+    <h3>Existem alguns fornecedores cadastrados</h3>
+@elseif (count(fornecedores)>=10)
+    <h4>Existem vários fornecedores cadastrados</h4>
+@else
+    <h4>Não existem fornecedores cadastrados</h4>
+@endif
